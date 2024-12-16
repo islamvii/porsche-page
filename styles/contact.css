@@ -1,0 +1,61 @@
+@import url("./styles.css");
+@import url("./navbar.css");
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(65px + 75px);
+    padding: var(--padding);
+}
+
+.main-text {
+    font-size: 6.4rem;
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+form .row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+form input {
+    width: min(60%, 350px);
+    padding: 10px 20px;
+    background-color: #E9E9E9;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border .2s ease;
+
+    &:focus {
+        outline: none;
+        border-color: rgb(182, 182, 182);
+    }
+}
+
+textarea {
+    width: 600px;
+    height: 266px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+#submit {
+    cursor: pointer;
+    background-color: #000;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    font-size: 1.6rem;
+    width: auto;
+    padding: 10px 30px;
+}

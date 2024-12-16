@@ -1,0 +1,30 @@
+@import url("./styles.css");
+@import url("./navbar.css");
+
+body {
+    background-color: #141313;
+}
+
+main {
+    position: relative;
+    padding: var(--padding);
+    margin-top: calc(65px + 75px);
+    height: calc(100vh - 75px - 65px);
+    color: #fff;
+}
+
+.main-text {
+    font-size: 6.4rem;
+    font-style: italic;
+}
+
+.subtitle {
+    position: inherit;
+    top: calc(50% - 75px - 60px);
+    font-size: 3.2rem;
+    max-width: 2000px;
+}
+
+header {
+    background: none;
+}

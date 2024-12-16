@@ -1,0 +1,54 @@
+@import url("./styles.css");
+@import url("./navbar.css");
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(65px + 75px);
+    padding: var(--padding);
+    margin-bottom: 60px;
+}
+
+.main-text {
+    font-size: 6.4rem;
+    font-style: italic;
+}
+
+.gallery-pictures {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.picture {
+    cursor: pointer;
+    position: relative;
+    margin: 30px;
+
+    transition: transform .2s ease;
+
+    & img {
+        transition: filter .2s ease;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    & img:hover {
+        filter:brightness(0.7);
+    }
+}
+
+.subtitle {
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
