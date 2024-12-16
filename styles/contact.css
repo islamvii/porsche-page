@@ -20,6 +20,7 @@ main form {
     align-items: start;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 60px;
 }
 
 form .row {
